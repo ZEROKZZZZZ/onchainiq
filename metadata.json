@@ -1,0 +1,6 @@
+{
+  "name": "OnChainIQ",
+  "description": "AI protocol intelligence and token security scanner for crypto projects with grounded multi-source citations, on-chain evidence, and side-by-side risk comparison.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

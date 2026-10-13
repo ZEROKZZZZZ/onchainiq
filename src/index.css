@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0F0B1E;
+    color: #E2E8F0;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbar for deep purple theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D091A;
+}
+::-webkit-scrollbar-thumb {
+  background: #2D224C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4C3575;
+}
+
+/* Soft glowing badges and accents */
+.glow-purple {
+  box-shadow: 0 0 24px -2px rgba(168, 85, 247, 0.35);
+}
+
+.glow-blue {
+  box-shadow: 0 0 24px -2px rgba(59, 130, 246, 0.35);
+}
+
+.glow-teal {
+  box-shadow: 0 0 24px -2px rgba(20, 184, 166, 0.35);
+}
+
+.glow-orange {
+  box-shadow: 0 0 24px -2px rgba(249, 115, 22, 0.35);
+}
+
+/* Soft subtle card borders and backdrop */
+.copilot-card {
+  background-color: #17112E;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.copilot-card:hover {
+  border-color: rgba(168, 85, 247, 0.2);
+}
+
+/* Data table row subtle hover */
+.table-row-hover {
+  transition: background-color 0.15s ease;
+}
+.table-row-hover:hover {
+  background-color: rgba(168, 85, 247, 0.06);
+}
+
+/* Print styles */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
